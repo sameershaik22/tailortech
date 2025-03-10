@@ -1,0 +1,624 @@
+
+*
+{
+    margin :0;
+    padding :0;
+    box-sizing : border-box;
+    font-family : 'Poppins',sans-serif;
+     
+}
+
+body{
+    width: 100%;
+    height: 4500px;
+    background: radial-gradient(farthest-side at 100px 100px, #001043,black);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    display: flex;
+    font-family: Arial, Helvetica, sans-serif;
+    flex-direction:column;
+}
+
+.tool {
+    color: #626a81;
+}
+
+.container1 {
+    margin-top:100px;
+    margin-bottom:100px;
+    margin-left:100px;
+    margin-right:100px;
+     
+}
+.page-tittle {
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+}
+
+.exp{
+
+    text-align: center;
+    font-size: 38px;
+    font-weight: lighter;
+    margin-top: 30px;
+
+}
+.page-tittle p{
+    color: #626a81;
+    font-size: 15px;
+    letter-spacing: 1px;
+}
+
+.exp2{
+    margin-top:25px ;
+    width: 50%;
+    font-size: 19px;
+    color: #626a81;
+    letter-spacing: 0.5px;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+.fc{
+    color: #2b3142;
+}
+.navbar{
+    height: 65px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+   
+}
+.navbar:hover{
+    background-image: linear-gradient(to right,#121e46 40%,black);
+    color: rgb(135, 133, 133);
+    margin-top: 0px;
+    display: flex;
+    justify-content: space-between;
+}
+.navcon{
+    display: flex;
+    justify-content: space-evenly;
+    width: 60%;
+    margin-left: 60px ;
+    margin-bottom: 60px;
+    margin-top: 40px;
+}
+.navlogo{
+    font-size: 25px;
+    margin-left: 20px;
+    margin-top: 40px;
+}
+.navlogo:hover{
+    color: white;
+    cursor: pointer;
+}
+.navdot a{
+    color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.about{
+    font-size: 17px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 5px;
+}
+.about:hover{
+    color: white;
+    cursor: pointer;
+}
+.navbar:hover a{
+    color: rgb(135, 133, 133);
+}
+.ab{
+    margin-top: 5px;
+}
+.ab a{
+    font-size: 17px;
+    margin-right: 20px;
+    text-align: center;
+    margin-top: 10px;
+    width: 20px;
+    text-decoration: none;  
+    color: white;
+
+}
+.ab:hover a{
+    color: white;
+    cursor: pointer;
+}
+.navdot{
+    width: 60%;
+    display: flex;
+    
+}
+.navsearch{
+    margin-right: 10px;
+    margin-top: -50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    position: relative;
+    margin-top: 35px;
+    margin-right: 10px;
+
+    transition: all 1s;
+    width: 50px;
+    height: 50px;
+    background: white;
+    box-sizing: border-box;
+    border-radius: 25px;
+    border: 4px solid white;
+    padding: 5px;
+}
+input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;;
+    height: 42.5px;
+    line-height: 30px;
+    outline: 0;
+    border: 0;
+    display: none;
+    font-size: 1em;
+    border-radius: 20px;
+    padding: 0 20px;
+}
+.fa{
+    box-sizing: border-box;
+    padding: 10px;
+    width: 42.5px;
+    height: 42.5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    color: #12276f;
+    text-align: center;
+    font-size: 1.2em;
+    transition: all 1s;
+}
+form:hover{
+    width: 300px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+form:hover input{
+    display: block;
+}
+form:hover .fa{
+    background: #12276f;
+    color: white;
+}
+
+
+.container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container .card {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container .card .content1 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container .card:hover .content1 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container .card .content1 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container .card .content1 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container .card .content1 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.container2 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container2 .card2 {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container2 .card2 .content2 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container2 .card2:hover .content2 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container2 .card2 .content2 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container2 .card2 .content2 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container2 .card2 .content2 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.container3 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container3 .card3 {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container3 .card3 .content3 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container3 .card3:hover .content3 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container3 .card3 .content3 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container3 .card3 .content3 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container3 .card3 .content3 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.container4 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container4 .card4 {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container4 .card4 .content4 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container4 .card4:hover .content4 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container4 .card4 .content4 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container4 .card4 .content4 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container4 .card4 .content4 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.container5 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container5 .card5 {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container5 .card5 .content5 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container5 .card5:hover .content5 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container5 .card5 .content5 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container5 .card5 .content5 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container5 .card5 .content5 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.container6 {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    z-index: 1;
+}
+
+.container6 .card6 {
+     position: relative;
+     width: 280px;
+     height: 400px;
+     margin: 30px;
+     box-shadow: 20px 20px 50px rgba(0,0,0,0.5);
+     border-radius: 15px;
+     background: rgba(255,255,255,0.1);
+     overflow: hidden;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-top: 1px solid rgba(255,255,255,0.5);
+     border-left: 1px solid rgba(255,255,255,0.5);
+     backdrop-filter: blur(5px);
+}
+
+.container6 .card6 .content6 {
+    padding: 20px;
+    text-align:center;
+    transform: translate(100px);
+    opacity: 0;
+    transition : 0.5s;
+}
+
+.container6 .card6:hover .content6 {
+    transform: translate(0px);
+    opacity: 1;
+
+}
+
+
+.container6 .card6 .content6 h3 {
+    font-size: 1.8em;
+    color : #fff;
+    z-index: 1;
+}
+
+.container6 .card6 .content6 p{
+    font-size: 1em;
+    color : #fff;
+    font-weight: 300;
+}
+
+.container6 .card6 .content6 a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    margin-top:15px;
+    background: #fff;
+    color : #000;
+    border-radius: 20px;
+    text-decoration: none;
+    font-weight: 500;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+.containerfull {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+
+}
+.log{
+    margin-left: 10px;
+}
